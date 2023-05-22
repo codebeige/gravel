@@ -1,2 +1,9 @@
 {:deps {org.clojure/clojure {:mvn/version "1.11.1"}
-        org.clojure/clojurescript {:mvn/version "1.11.60"}}}
+        org.clojure/clojurescript {:mvn/version "1.11.60"}}
+ :aliases
+ {:dev
+  {:extra-paths ["dev"]
+   :extra-deps {cider/cider-nrepl {:mvn/version "0.30.0"}
+                io.github.nextjournal/clerk {:mvn/version "0.13.842"}
+                nrepl/nrepl {:mvn/version "1.0.0"}}
+   :exec-fn codebeige.gravel.dev/up!}}}
